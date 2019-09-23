@@ -1,0 +1,14 @@
+{
+  "name": "actions-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Robert-W/actions-test.git",
+  "author": "Robert Winterbottom <rwinterbottom@asymmetrik.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
