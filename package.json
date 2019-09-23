@@ -6,7 +6,8 @@
   "author": "Robert Winterbottom <rwinterbottom@asymmetrik.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "echo hello"
   },
   "devDependencies": {
     "jest": "^24.9.0"
