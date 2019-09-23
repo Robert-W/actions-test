@@ -1,0 +1,16 @@
+name: Docker Tests
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v1
+      - name: Build Docker image
+        run: docker build -t test .
+      - name: Run tests in Docker
+        run: docker run test yarn test
+        
+      
