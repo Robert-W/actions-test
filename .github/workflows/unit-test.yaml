@@ -5,6 +5,17 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: ['10', '12']
     steps:
+      - name: Checkout Code
+      - uses: actions/checkout@v1
+      - name: Setup Node
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Install all dependencies
+        run: yarn install
       - name: Run all unit tests
         run: yarn test
