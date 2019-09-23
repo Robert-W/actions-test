@@ -10,9 +10,9 @@ jobs:
         node: ['10', '12']
     steps:
       - name: Checkout Code
-      - uses: actions/checkout@v1
+        uses: actions/checkout@v1
       - name: Setup Node
-      - uses: actions/setup-node@v1
+        uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
       - name: Install all dependencies
